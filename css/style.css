@@ -18,12 +18,12 @@ body {
 }
 
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     overflow-y: clip;
 }
 
 footer {
-    height: 100px;
+    height: 80px;
     background-color: var(--footer-color);
     position: relative;
 }
@@ -68,7 +68,7 @@ a {
 #albums-top-btn>.call-to-action {
     padding: 12px;
     border: 1px solid white;
-    width: 12%;
+    width: 160px;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -80,9 +80,10 @@ a {
 
 /* NAVIGATION */
 .logo img {
-    width: 60%;
+    width: 140px;
     height: auto;
     padding: 20px;
+    margin-left: 12px;
 }
 
 .menu {
@@ -131,6 +132,9 @@ a {
 
 .profile {
     margin-top: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .profile span,
@@ -149,7 +153,8 @@ a {
 }
 
 .install {
-    padding: 18px;
+    padding: 5px;
+    margin-left: 15px;
 }
 
 hr {
@@ -162,6 +167,7 @@ hr {
     align-items: center;
     column-gap: 5px;
     padding: 10px;
+    margin-left: 5px;
 }
 
 .name {
