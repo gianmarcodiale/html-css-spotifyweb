@@ -11,3 +11,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    height: calc(100vh - 100px);
+}
+
+footer {
+    height: 100px;
+    background-color: var(--footer-color);
+}
+
+.debug #app-main>#main-container {
+    background-color: var(--main-page-color);
+    height: 100%;
+}
+
+.debug #main-container>.navigation {
+    background-color: #000000;
+    width: 20%;
+    height: 100%;
+}
+
+/* UTILITY */
+#main-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#main-container>.navigation {
+    float: left;
+}
+
+#main-container>.albums-page {
+    float: left;
+}
