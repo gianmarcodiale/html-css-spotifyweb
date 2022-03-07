@@ -19,12 +19,13 @@ body {
 
 main {
     height: calc(100vh - 100px);
+    overflow-y: clip;
 }
 
 footer {
     height: 100px;
     background-color: var(--footer-color);
-    position: sticky;
+    position: relative;
 }
 
 a {
@@ -86,27 +87,83 @@ a {
 
 .menu {
     padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu>a {
     display: block;
     padding: 5px;
     font-size: 20px;
+    color: var(--font-color);
+}
+
+.menu>a:hover {
+    color: white;
 }
 
 .playlist {
-    padding: 15px;
+    padding: 34px;
+    margin-top: -39px;
     font-size: 15px;
     line-height: 35px;
     display: flex;
     flex-direction: column;
 }
 
+.playlist>h5 {
+    color: white;
+}
+
 .playlist a {
     color: var(--font-color);
+}
+
+.playlist a:hover {
+    color: white;
 }
 
 .playlist i {
     font-size: 30px;
     vertical-align: sub;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile span,
+.profile i {
+    color: var(--font-color);
+}
+
+.profile-pic {
+    width: 30px;
+    display: flex;
+}
+
+.profile-pic>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.install {
+    padding: 18px;
+}
+
+hr {
+    width: 170px;
+    margin-left: 19px;
+}
+
+.nav-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 10px;
+}
+
+.name {
+    color: white;
 }
