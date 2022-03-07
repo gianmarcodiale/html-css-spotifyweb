@@ -4,6 +4,7 @@
     --main-page-color: #141922;
     --footer-color: #282828;
     --plus-button: #A3A3A3;
+    --main-header: #080B12;
 }
 
 * {
@@ -19,11 +20,13 @@ main {
 footer {
     height: 100px;
     background-color: var(--footer-color);
+    position: sticky;
 }
 
 .debug #app-main>#main-container {
     background-color: var(--main-page-color);
     height: 100%;
+    position: relative;
 }
 
 .debug #main-container>.navigation {
@@ -45,4 +48,28 @@ footer {
 
 #main-container>.albums-page {
     float: left;
+}
+
+#albums-top-btn {
+    background-color: var(--main-header);
+}
+
+/* MAIN */
+#albums-top-btn>.call-to-action {
+    padding: 12px;
+    border: 1px solid white;
+    width: 12%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    border-radius: 50px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+    padding: 20px;
 }
