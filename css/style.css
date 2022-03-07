@@ -94,6 +94,19 @@ a {
     font-size: 20px;
 }
 
-.menu span {
-    margin-left: 5px;
+.playlist {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist a {
+    color: var(--font-color);
+}
+
+.playlist i {
+    font-size: 30px;
+    vertical-align: sub;
 }
