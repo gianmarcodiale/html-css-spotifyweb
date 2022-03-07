@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 main {
     height: calc(100vh - 100px);
 }
@@ -21,6 +25,11 @@ footer {
     height: 100px;
     background-color: var(--footer-color);
     position: sticky;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .debug #app-main>#main-container {
@@ -68,8 +77,23 @@ footer {
     text-align: center;
 }
 
+/* NAVIGATION */
 .logo img {
-    width: 80%;
+    width: 60%;
     height: auto;
     padding: 20px;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu>a {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.menu span {
+    margin-left: 5px;
 }
