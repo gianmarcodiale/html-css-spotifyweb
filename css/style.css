@@ -135,6 +135,7 @@ a {
     width: 90%;
     margin: auto;
     margin-top: 100px;
+    font-size: 13px;
 }
 
 .profile span,
@@ -170,6 +171,43 @@ hr {
     margin-left: 5px;
 }
 
-.name {
+.nav-footer>.name>span {
     color: white;
+}
+
+/* FOOTER */
+#player-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#player-left>.song-label {
+    width: 20%;
+}
+
+#player-left>.song-label>img {
+    width: 100%;
+    padding: 15px;
+}
+
+#player-left>.song-title {
+    color: white;
+}
+
+.author {
+    color: var(--font-color);
+    font-size: 10px;
+}
+
+#player-left>.favourite {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    margin-left: 50px;
+    row-gap: 10px;
+}
+
+#player-left>.favourite>i:hover {
+    color: rgb(2, 224, 2);
 }
