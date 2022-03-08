@@ -13,73 +13,73 @@
 </head>
 <body class="debug">
     <main id="app-main">
+        <aside class="navigation">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span style="margin-left: 3px">Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span style="margin-left: 5px">Search</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span style="margin-left: 11px">Library</span>
+                </a>
+            </div>
+            <!-- /.menu -->
+            <div class="playlist">
+                <h5>PLAYLIST</h5>
+                <a href="#">
+                    <i class="fa-solid fa-folder-plus"></i>
+                    <span>Crea Playlist</span>
+                </a>
+                <a href="#">
+                    Nome Playlist
+                </a>
+                <a href="#">
+                    Nome Playlist
+                </a>
+                <a href="#">
+                    Nome Playlist
+                </a>
+                <a href="#">
+                    Nome Playlist
+                </a>
+                <a href="#">
+                    Nome Playlist
+                </a>
+            </div>
+            <!-- /.playlist -->
+            <div class="profile">
+                <div class="install">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Installa app</span>
+                </div>
+                <hr>
+                <div class="nav-footer">
+                    <div class="profile-pic">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                    </div>
+                    <div class="name">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.profile -->
+        </aside>
+        <!-- /.navigation -->
+        <div id="albums-top-btn">
+            <div class="call-to-action">
+                EFFETTUA L'UPGRADE
+            </div>     
+        </div>
         <div id="main-container">
-            <aside class="navigation">
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="">
-                </div>
-                <div class="menu">
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <span style="margin-left: 3px">Home</span>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span style="margin-left: 5px">Search</span>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-bookmark"></i>
-                        <span style="margin-left: 11px">Library</span>
-                    </a>
-                </div>
-                <!-- /.menu -->
-                <div class="playlist">
-                    <h5>PLAYLIST</h5>
-                    <a href="#">
-                        <i class="fa-solid fa-folder-plus"></i>
-                        <span>Crea Playlist</span>
-                    </a>
-                    <a href="#">
-                        Nome Playlist
-                    </a>
-                    <a href="#">
-                        Nome Playlist
-                    </a>
-                    <a href="#">
-                        Nome Playlist
-                    </a>
-                    <a href="#">
-                        Nome Playlist
-                    </a>
-                    <a href="#">
-                        Nome Playlist
-                    </a>
-                </div>
-                <!-- /.playlist -->
-                <div class="profile">
-                    <div class="install">
-                        <i class="fa-solid fa-download"></i>
-                        <span>Installa app</span>
-                    </div>
-                    <hr>
-                    <div class="nav-footer">
-                        <div class="profile-pic">
-                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
-                        </div>
-                        <div class="name">
-                            <span>John Doe</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.profile -->
-            </aside>
-            <!-- /.navigation -->
             <div class="albums-page">
-                <div id="albums-top-btn">
-                    <div class="call-to-action">
-                        EFFETTUA L'UPGRADE
-                    </div>     
-                </div>
                 <div class="main-nav">
                     <div class="nav-text active">
                         <a href="">IN EVIDENZA</a> 
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <h2>Recently played</h2>
-                <div id="album-cover-container-top">
+                <div id="album-cover-container">
                     <div class="album-covers">
                         <img src="./img/metal_lifting.jpg" alt="">
                     </div>
@@ -120,6 +120,26 @@
                     </div>
                     <div class="album-covers">
                         <img src="./img/sinister.jpeg" alt="">
+                    </div>
+                </div>
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div id="album-cover-container">
+                    <div class="album-covers">
+                        <img src="./img/radar.jpeg" alt="">
+                    </div>
+                    <div class="album-covers">
+                        <img src="./img/mixdaily.jpeg" alt="">
+                    </div>
+                </div>
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div id="album-cover-container">
+                    <div class="artist-covers">
+                        <img src="./img/einaudi.jpeg" alt="">
+                    </div>
+                    <div class="artist-covers">
+                        <img src="./img/youg.jpeg" alt="">
                     </div>
                 </div>
             </div>

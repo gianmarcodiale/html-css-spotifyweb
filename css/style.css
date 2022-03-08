@@ -17,15 +17,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-main {
-    height: calc(100vh - 80px);
-    overflow-y: clip;
-}
-
 footer {
     height: 80px;
+    width: 100%;
     background-color: var(--footer-color);
-    position: relative;
+    position: fixed;
 }
 
 a {
@@ -33,33 +29,30 @@ a {
     color: white;
 }
 
-.debug #app-main>#main-container {
-    background-color: var(--main-page-color);
-    height: 100%;
-    position: relative;
-}
-
-#main-container>.navigation {
-    background-color: #000000;
-    width: 240px;
-    height: 100%;
-}
-
-/* UTILITY */
-#main-container::after {
+#app-main::after {
     content: "";
     display: table;
     clear: both;
 }
 
-#main-container>.navigation {
-    float: left;
+#app-main>#main-container {
+    background-color: var(--main-page-color);
+    height: calc(100vh - 80px);
+    width: calc(100% - 240px);
+    float: right;
+    overflow: scroll;
 }
 
-#main-container>.albums-page {
+#app-main>.navigation {
+    background-color: #000000;
+    width: 240px;
+    height: 100%;
     float: left;
+    position: fixed;
+
 }
 
+/* UTILITY */
 #albums-top-btn {
     background-color: var(--main-header);
     height: 65px;
@@ -69,6 +62,13 @@ a {
     color: white;
     margin-top: 3rem;
     margin-left: 0.5rem;
+}
+
+#main-container p {
+    color: var(--font-color);
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 15px;
 }
 
 /* MAIN */
@@ -83,10 +83,6 @@ a {
     border-radius: 50px;
     font-size: 13px;
     text-align: center;
-}
-
-.albums-page {
-    width: calc(100% - 240px);
 }
 
 .main-nav {
@@ -116,18 +112,27 @@ a {
     height: 2px;
 }
 
-#album-cover-container-top {
+#album-cover-container {
     display: flex;
     margin: 2rem 0.5rem 0 0.5rem;
     column-gap: 0.5rem;
 }
 
-#album-cover-container-top>.album-covers {
+#album-cover-container>.album-covers {
     max-width: 200px;
 }
 
 .album-covers>img {
     width: 100%;
+}
+
+#album-cover-container>.artist-covers {
+    max-width: 200px;
+}
+
+.artist-covers>img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 /* NAVIGATION */
