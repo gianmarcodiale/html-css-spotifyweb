@@ -65,6 +65,12 @@ a {
     height: 65px;
 }
 
+.albums-page>h2 {
+    color: white;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+}
+
 /* MAIN */
 #albums-top-btn>.call-to-action {
     padding: 12px;
@@ -108,6 +114,20 @@ a {
     background-color: rgb(2, 224, 2);
     width: 30px;
     height: 2px;
+}
+
+#album-cover-container-top {
+    display: flex;
+    margin: 2rem 0.5rem 0 0.5rem;
+    column-gap: 0.5rem;
+}
+
+#album-cover-container-top>.album-covers {
+    max-width: 200px;
+}
+
+.album-covers>img {
+    width: 100%;
 }
 
 /* NAVIGATION */
