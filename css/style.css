@@ -4,7 +4,7 @@
     --main-page-color: #141922;
     --footer-color: #282828;
     --plus-button: #A3A3A3;
-    --main-header: #080B12;
+    --main-header: #080b12;
 }
 
 * {
@@ -21,7 +21,6 @@ footer {
     height: 80px;
     width: 100%;
     background-color: var(--footer-color);
-    position: fixed;
 }
 
 a {
@@ -46,7 +45,6 @@ a {
 #app-main>.navigation {
     background-color: #000000;
     width: 240px;
-    height: 100%;
     float: left;
     position: fixed;
 
@@ -69,6 +67,11 @@ a {
     margin-left: 0.5rem;
     margin-top: 0.5rem;
     font-size: 15px;
+}
+
+#main-container h3 {
+    color: white;
+    margin-top: 0.5rem;
 }
 
 /* MAIN */
@@ -119,7 +122,8 @@ a {
 }
 
 #album-cover-container>.album-covers {
-    max-width: 200px;
+    max-width: 148.6px;
+    text-align: center;
 }
 
 .album-covers>img {
@@ -196,7 +200,7 @@ a {
     margin-top: 50px;
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 105px;
     font-size: 13px;
 }
 
