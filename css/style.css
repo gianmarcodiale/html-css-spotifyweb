@@ -54,6 +54,7 @@ a {
     float: left;
     position: fixed;
     height: calc(100% - 80px);
+    transition: all 1s;
 
 }
 
@@ -111,16 +112,11 @@ a {
     color: white;
 }
 
-.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .selected {
     background-color: rgb(2, 224, 2);
     width: 30px;
     height: 2px;
+    margin: auto;
 }
 
 #album-cover-container {
@@ -223,6 +219,7 @@ a {
     position: absolute;
     bottom: 0;
     left: 15px;
+    background-color: #000000;
 }
 
 .profile span,
@@ -253,9 +250,10 @@ a {
     column-gap: 0.5rem;
 }
 
-hr {
-    width: 170px;
-    margin-left: 19px;
+.hr {
+    height: 1px;
+    background-color: gray;
+    width: 90%;
 }
 
 .nav-footer {
@@ -370,3 +368,41 @@ hr {
     color: rgb(2, 224, 2);
 }
 
+/* MEDIA QUERY */
+
+@media screen and (max-width: 890px) {
+    
+    
+    #album-cover-container>.album-covers {
+        width: calc(100% / 4);
+    }
+
+    #app-main>.navigation {
+        width: 180px;
+    }
+
+    #app-main>#main-container{
+        width: calc(100% - 180px);
+    }
+
+    .playlist, .playlist span {
+        font-size: 14px;
+    }
+
+    .playlist i {
+        font-size: 25px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 747px) {
+
+    .main-nav a {
+        font-size: 10px;
+    }
+
+}
