@@ -369,14 +369,6 @@ a {
     -webkit-appearance: none;
 }
 
-.player-time::-webkit-slider-runnable-track {
-    width: 100%;
-}
-
-.player-time:focus::-webkit-slider-runnable-track {
-
-}
-
 .time-commands>.time-left,
 .time-commands>.time-right {
     font-size: 12px;
@@ -395,8 +387,13 @@ a {
 #player-right>.volume-bar {
     width: 100px;
     height: 2px;
-    background-color: white;
+    background-color: var(--font-color);
     border-radius: 10px;
+    -webkit-appearance: none;
+}
+
+.volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
 }
 
 #player-right i:hover {
