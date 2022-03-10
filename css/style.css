@@ -38,6 +38,7 @@ a {
 #app-main {
     height: calc(100vh - 80px);
     overflow: hidden;
+    position: relative;
 }
 
 #app-main>#main-container {
@@ -56,6 +57,16 @@ a {
     height: calc(100% - 80px);
     transition: all 1s;
 
+}
+
+#app-main>.home-active {
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    width: 5px;
+    height: 25px;
+    z-index: 1;
+    background-color: rgb(2, 224, 2);
 }
 
 /* UTILITY */
