@@ -571,3 +571,17 @@ input[type="range"]::-webkit-slider-thumb {
         display: block;
     }
 }
+
+@media screen and (max-width: 570px) {
+    
+    #player-center {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+
+    .player-commands i {
+        font-size: 15px;
+    }
+}
