@@ -155,6 +155,7 @@ a {
 
 .album-image:hover img {
     filter: brightness(0.5);
+    transform: scale(1.05);
 }
 
 .album-image>img {
@@ -390,15 +391,28 @@ a {
 
 #player-center .player-time {
     width: 100%;
-    height: 3px;
-    background-color: var(--font-color);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
 }
 
-.player-time::-webkit-slider-thumb {
+input[type="range"] {
     -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: var(--font-color);
+    height: 3px;
+    border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .time-commands>.time-left,
