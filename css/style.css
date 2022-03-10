@@ -87,7 +87,7 @@ a {
 #albums-top-btn .call-to-action {
     padding: 12px;
     border: 1px solid white;
-    width: 160px;
+    width: 200px;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -95,6 +95,10 @@ a {
     border-radius: 50px;
     font-size: 13px;
     text-align: center;
+}
+
+#albums-top-btn .call-to-action:hover {
+    transform: scale(1.1);
 }
 
 .main-nav {
@@ -439,7 +443,7 @@ a {
     .album-cover-container {
         flex-wrap: wrap;
     }
-    
+
     .album-cover-container>.album-covers {
         width: calc(100% / 4);
     }
